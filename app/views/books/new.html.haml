@@ -1,3 +1,5 @@
+%link{:href => "app/assets/stylesheets/application.css", :rel => "stylesheet"}/
+
 = form_for :book, url: books_path do |f|
   - if @book.errors.any?
     #error_explanation

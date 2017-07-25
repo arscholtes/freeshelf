@@ -1,4 +1,4 @@
-Activity: Freeshelf, Day 1 - Pair Programming
+Activity: Freeshelf, Day 1
 
 Work on day 1 of the Freeshelf project. Have a check-in with a partner and with an instructor on your progress. The instructions for day 1 are repeated below.
 
@@ -10,8 +10,10 @@ Allow anyone to create a new book entry
 Books have, at a minimum, a title, author, description, and URL
 Allow anyone to update or delete a book entry
 Allow anyone to view the list of books
-Added features  
-If you finish all of the above, consider some of the following:
+
+Added features:
+
+If you finish all of the above, consider some of the following-->
 
 Style your application with your own CSS by editing app/assets/stylesheets/application.css or digging into the asset pipeline
 Paginate the list of books with Kaminari

@@ -1,4 +1,5 @@
-= form_for :book, url: books_path do |f|
+%h1 Edit Book
+= form_for(@book) do |f|
   - if @book.errors.any?
     #error_explanation
       %h2
@@ -26,6 +27,4 @@
     = f.text_field :url
   %p
     = f.submit
-= form_for :book, url: books_path do |f|
-  \...
 = link_to 'Back', books_path

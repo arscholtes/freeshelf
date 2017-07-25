@@ -26,6 +26,4 @@
     = f.text_field :url
   %p
     = f.submit
-= form_for :book, url: books_path do |f|
-  \...
-= link_to 'Back', books_path
+= link_to 'Back', articles_path

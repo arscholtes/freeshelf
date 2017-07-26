@@ -2,8 +2,9 @@
 
 %h1 freeshelf
 %h2 books for code
-- if user_signed_in?
-  %p.sign_in= link_to "Admin Login", new_user_session_path
+- if !user_signed_in?
+  %div{:class => "buttons"}
+  %button.button= link_to('Login', new_user_session_path)
 - if user_signed_in?
   %div{:class => "buttons>"}
   %button.button= link_to('Logout', destroy_user_session_path, :method => :delete)

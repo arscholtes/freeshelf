@@ -14,7 +14,9 @@
       %td= book.discription
       %td= book.url
       %td= link_to 'Show', book_path(book)
-      %td= link_to 'Edit', edit_book_path(book)
-      %td= link_to 'Destroy', book_path(book), |
-    method: :delete,                          |
-    data: { confirm: 'Are you sure?' }        |
+    - if user_signed_in?
+      %div{:class => "buttons>"}
+        %td= link_to 'Edit', edit_book_path(book)
+        %td= link_to 'Delete', book_path(book), |
+      method: :delete,                          |
+      data: { confirm: 'Are you sure?' }        |
